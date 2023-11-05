@@ -3,6 +3,7 @@
 # FRESH INSTALL OF UBUNTU SCRIPT
 # SETUP ssh-keygen + github
 USER=bravo
+PROJECT=$HOME/personal/dotfiles
 
 mkdir $HOME/personal
 mkdir $HOME/work
@@ -30,8 +31,16 @@ cd $HOME/.config/ && git clone git@github.com:BirkJohannessen/i3.git
 cd $HOME/.config/ && git clone git@github.com:BirkJohannessen/nvim.git
 cd $HOME/.config/ && git clone git@github.com:BirkJohannessen/tmux.git
 
+#xinit
+sudo apt install xinit -y
+# disable graphical.target with tty displaymanager
+sudo systemctl set-default multi-user.target
+# capslock reboot remap persister - identifier get by "xinput list command"
+# cp $PROJECT/etcoverrides/00-keyboard.conf /etc/X11/xorg.conf.d/
+
 #workstuff
 cd $HOME/work && git clone git@github.com:BirkJohannessen/machina-birk.git
+
 
 #installs
 # bash $HOME/.config/i3/install.sh

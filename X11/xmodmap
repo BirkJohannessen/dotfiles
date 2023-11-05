@@ -1,0 +1,8 @@
+!caps lock to esc with shift+capslock for capslock
+!clear lock
+!keycode 66 = Escape Caps_Lock Escape NoSymbol
+
+!home is print
+!keycode 110 = Print
+!print is super
+!keycode 107 = Super_L

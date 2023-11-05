@@ -1,0 +1,3 @@
+xmodmap $HOME/.config/X11/xmodmap &
+
+exec i3
