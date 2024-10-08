@@ -1,0 +1,3 @@
+**tmux**
+
+Terminal multiplexer config

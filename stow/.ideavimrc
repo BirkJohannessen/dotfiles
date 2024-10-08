@@ -1,0 +1,124 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+" vim.opt.relativenumber = true
+set relativenumber
+" vim.opt.nu = true --number
+set nu
+" vim.opt.tabstop = 4
+set tabstop = 4
+" vim.opt.softtabstop = 4
+set softtabstop = 4
+" vim.opt.shiftwidth = 4
+set shiftwidth = 4
+" vim.opt.hlsearch = true--/f
+set hlsearch = 4
+" vim.opt.incsearch = true --/find on /f
+set incsearch
+"vim.opt.smartindent = true
+set smartindent
+"vim.opt.wrap = false
+
+" vim.opt.hlsearch = false
+
+" vim.opt.scrolloff = 8
+set scrolloff = 8
+
+" vim.opt.signcolumn = "yes"
+set signcolumn = "yes"
+
+" "-- Make line numbers default
+" vim.wo.number = true
+set number
+
+" "-- Enable mouse mode
+" "-- vim.o.mouse = 'a'
+
+" "-- Sync clipboard between OS and Neovim.
+" "--  Remove this option if you want your OS clipboard to remain independent.
+" "--  See `:help 'clipboard'`
+" vim.o.clipboard = 'unnamedplus'
+
+" "-- Enable break indent
+" vim.o.breakindent = true
+set breakindent
+
+" "-- Save undo history
+"vim.o.undofile = true
+set undofile
+
+""-- Case insensitive searching UNLESS /C or capital in search
+" vim.o.ignorecase = true
+set ignorecase
+" vim.o.smartcase = true
+set smartcase
+
+" -- Keep signcolumn on by default
+" vim.wo.signcolumn = 'yes'
+set signcolumn = 'yes'
+
+" "-- Decrease update time
+"vim.o.updatetime = 250
+"vim.o.timeout = true
+"vim.o.timeoutlen = 300
+
+" "-- Set completeopt to have a better completion experience
+" vim.o.completeopt = 'menuone,noselect'
+set completeopt = 'menuone,noselect'
+
+""-- NOTE: You should make sure your terminal supports this
+" vim.o.termguicolors = true
+"" set termguicolors
+
+" "-- [[ Basic Keymaps ]]
+
+""-- Keymaps for better default experience
+" "-- See `:help vim.keymap.set()`
+" vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+
+" "-- Remap for dealing with word wrap
+" vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+" vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+
+" "-- [[ Highlight on yank ]]
+" "-- See `:help vim.highlight.on_yank()`
+"local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+"vim.api.nvim_create_autocmd('TextYankPost', {
+  "callback = function()
+    "vim.highlight.on_yank()
+  "end,
+  "group = highlight_group,
+  "pattern = '*',
+""})
