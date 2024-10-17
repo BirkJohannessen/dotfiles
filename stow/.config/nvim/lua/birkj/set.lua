@@ -5,8 +5,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.hlsearch = true--/f 
 vim.opt.incsearch = true --/find on /f
-vim.opt.smartindent = false
-vim.opt.expandtab = true
+vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.hlsearch = false
