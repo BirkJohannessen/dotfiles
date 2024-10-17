@@ -1,13 +1,14 @@
 # dotfiles
 
-[dotfiles, described by the Arch wiki](https://wiki.archlinux.org/title/Dotfiles)
-```
+[dotfiles, described by the Arch wiki:](https://wiki.archlinux.org/title/Dotfiles)
+
 User-specific application configuration is traditionally stored in so called dotfiles (files whose filename starts with a dot). It is common practice to track dotfiles with a version control system such as Git to keep track of changes and synchronize dotfiles across various hosts. There are various approaches to managing dotfiles (e.g. directly tracking dotfiles in the home directory v.s. storing them in a subdirectory and symlinking/copying/generating files with a shell script or a dedicated tool)
-```
+
+These dotfiles are managed by GNU stow, achieving central symlinking for every single linux configuration.  
 
 ## about
 
-My personal configuration for unix-systems including a collection of personal configs for but not limited to:
+These personal configurations includes but not limited to:
 
 * Neovim
 * Ideavim (intellij)
