@@ -2,6 +2,7 @@
 
 sudo apt install xsel -y
 sudo apt install tmux -y
+sudo apt install fzf -y
 git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
 tmux source $HOME/.config/tmux/tmux.conf
 
