@@ -11,6 +11,6 @@ alias bst='insights_cd && mvn clean install -DskipTests=true -T 4 && ic server b
 alias pst='insights_cd && mvn -T 4 clean package -DskipTests=true && ic server deploy && ss'
 alias bss='ic server build && ic server deploy && s'
 alias pss='ic server build && ic server deploy && s'
-alias kills='kill -9 $(lsof -t -i:8080)'
+alias kills='kill -9 $(pgrep -f wildfly)'
 
 #scripts
