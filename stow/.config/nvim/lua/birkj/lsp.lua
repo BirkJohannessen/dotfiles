@@ -48,6 +48,8 @@ end
 --
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
+local vue_language_server_path = require('mason-registry').get_package('vue-language-server'):get_install_path() .. '/node_modules/@vue/language-server'
+
 local servers = {
   -- clangd = {},
   -- gopls = {},
@@ -56,6 +58,19 @@ local servers = {
   -- tsserver = {},
 
   eslint = {},
+
+  tsserver = {
+    init_options = {
+    plugins = {
+      {
+        name = '@vue/typescript-plugin',
+        location = vue_language_server_path,
+        languages = { 'vue' },
+      },
+    },
+  },
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+  },
   -- csharp_ls = {},
 
   lua_ls = {
