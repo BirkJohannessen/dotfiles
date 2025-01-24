@@ -6,5 +6,6 @@ require("birkj.lsp")
 require("birkj.cmp")
 require("birkj.diagnostic")
 require("birkj.harpoon")
+require("birkj.scripts")
 -- require("birkj.packer")
 
