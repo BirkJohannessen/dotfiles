@@ -128,3 +128,6 @@ if [[ "$(tty)" = "/dev/tty1" ]]; then
     pgrep i3 || startx $HOME/.config/X11/xinitrc
 	
 fi
+
+# Add .NET Core SDK tools
+export PATH="$PATH:/home/bravo/.dotnet/tools"
