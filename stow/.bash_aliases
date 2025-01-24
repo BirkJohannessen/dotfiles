@@ -1,6 +1,6 @@
 #home office
 
-alias office='$HOME/work/machina-birk/hjemmekontor.sh'
+alias office='$HOME/work/birkscripts/hjemmekontor.sh'
 
 #work
 
