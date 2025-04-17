@@ -14,3 +14,5 @@ alias pss='ic server build && ic server deploy && ss'
 alias kills='kill -9 $(pgrep -f wildfly)'
 
 #scripts
+
+alias nvim='bob run stable'
