@@ -30,6 +30,12 @@ local actions = require "telescope.actions"
 
 telescope.setup {
     defaults = {
+        file_ignore_patterns = {
+            "node_modules",
+            ".git",
+            "insights2way/customers/extra/extra-siling/" -- insights2way legacy
+        },
+
 
         prompt_prefix = " ",
         selection_caret = " ",
