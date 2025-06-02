@@ -15,4 +15,4 @@ alias kills='kill -9 $(pgrep -f wildfly)'
 
 #scripts
 
-alias nvim='bob run stable'
+alias nvim='bob run v0.11.1'
